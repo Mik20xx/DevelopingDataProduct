@@ -1,0 +1,40 @@
+---
+title: "Developed data Product - week 4"
+author: "Miguel Gutierrez"
+date: "30 de noviembre de 2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Summary
+
+The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).
+
+In this presentation for the ttt course for week 4, an application has been created, designed to visualize in boxplot of two variables such as the number of cylinders and the type of transmission in the vehicles and their influence on the tests of performance.
+
+## Application
+
+At work, a Shiny application has been created and it was deployed on a web server at the following link:
+
+[Click here to go to the application website](https://mikeleresources.shinyapps.io/myapp/ "My shiny app")
+
+On the other hand, the application code is in the Github repository
+
+[Click here to go to the github repository](https://github.com/Mik20xx/DevelopingDataProduct "Github repository")
+
+## Slide with R Output
+
+```{r, echo = TRUE}
+library(datasets)
+summary(mtcars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+boxplot(mpg ~ cyl, data=mtcars)
+```
+
